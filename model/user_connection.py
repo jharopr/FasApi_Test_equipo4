@@ -6,7 +6,7 @@ class UserConnection:
     def __init__(self):
         try:
             self.conn = psycopg.connect(
-                "dbname = FastAPI_demo user = postgres password=1234 host=localhost port=5432"
+                "dbname = fastapi_test user = postgres password=1234 host=localhost port=5432"
             )
         except psycopg.OperationalError as err:
             print(err)
